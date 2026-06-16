@@ -1,3 +1,5 @@
+#Card Launch Success - JP Morgan
+
 WITH issue_rank AS(
   SELECT *,
     ROW_NUMBER() OVER (PARTITION BY card_name ORDER BY issue_year,issue_month) AS Ranking
